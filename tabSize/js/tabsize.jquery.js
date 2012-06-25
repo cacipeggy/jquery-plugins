@@ -7,7 +7,7 @@
 	 * @url		www.davestewart.co.uk
 	 * @date	June 2012
 	 */
-    $.fn.tabSize = function(size, nonBreaking, overrideSupport)
+	$.fn.tabSize = function(size, nonBreaking, overrideSupport)
 	{
 		// functions
 			function setTabSize()
