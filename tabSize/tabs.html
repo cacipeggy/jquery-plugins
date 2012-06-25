@@ -1,0 +1,96 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>jquery.tabSize plugin</title>
+<style type="text/css">
+	<!--
+	pre {
+		padding: 10px;
+		border-radius:5px;
+		background:#FAFAFA;
+		border:1px solid #EEE;
+	}
+	
+	.indent{
+		margin:20px;
+		}
+	-->
+</style>
+</head>
+
+<body>
+
+<h1>Tab Size Demo</h1>
+<p>tabSize() is a jQuery plugin to convert tabs to spaces (mainly for &lt;pre&gt; blocks)  so that your code looks the same in the browser as it does in your IDE</p>
+
+<pre id="pre" class="indent">
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |
+Rank	Artist			Song					Year
+1		Queen			Bohemian Rhapsody		1975
+2		John Lennon		Imagine					1980
+3		Robbie Williams	Angels					1997
+4		Beatles			Hey Jude				1968
+5		Nirvana			Smells Like Teen Spirit	1991
+6		Oasis			Live Forever			1994
+7		Oasis			Wonderwall				1995
+8		U2				One						1992
+9		Verve			Bitter Sweet Symphony	1997
+10		U2				With Or Without You		1987
+</pre>
+<div class="indent">
+	<select id="size">
+		<option value="1">1</option>
+		<option value="2">2</option>
+		<option value="3">3</option>
+		<option value="4" selected="selected">4</option>
+		<option value="5">5</option>
+		<option value="6">6</option>
+		<option value="7">7</option>
+		<option value="8">8</option>
+	</select>
+	
+	<select id="spaces">
+		<option value="0">Use tabs</option>
+		<option value="1">Use spaces</option>
+		<option value="2">Force spaces</option>
+	</select>
+	
+	<button id="set">Set Tab Size</button>
+	<button id="reset">Reset Text</button>
+</div>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+<script src="js/tabsize.jquery.js"></script>
+<script>
+
+	function onSet(event)
+	{
+		var size	= $('#size').val();
+		var spaces	= $('#spaces').val() == 1;
+		var force	= $('#spaces').val() == 2;
+		
+		onReset();
+		pre.tabSize(size, spaces, force);
+	}
+	
+	function onReset(event)
+	{
+		pre.removeAttr('style').html(html);
+	}
+	
+	function init()
+	{
+		$('#set').click(onSet);
+		$('#reset').click(onReset);
+	}
+	
+	var pre = $('pre');
+	var html = pre.html();
+	
+	$(init);
+</script>
+
+</body>
+</html>
+
