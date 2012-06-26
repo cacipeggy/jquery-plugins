@@ -7,7 +7,7 @@ or else it correctly converts tabs to spaces in unsupported browsers.
 Below is an example of code copied from an IDE with 4-space tabs size, to a browser 
 with 8-space tabs size.
 
-    |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |
+    |       |       |       |       |       |       |       |       |       |       |       |       |       
     Rank    Artist                  Song                                    Year
     1               Queen                   Bohemian Rhapsody               1975
     2               John Lennon             Imagine                                 1980
