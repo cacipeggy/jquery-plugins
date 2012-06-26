@@ -1,11 +1,17 @@
 (function($) {
 
 	/**
-	 * tabSize() is a jQuery plugin to convert tabs to spaces (mainly for <pre> blocks) 
+	 * tabSize() is a jQuery plugin to convert tabs to spaces (mainly for <pre> blocks)
 	 * so that your code looks the same in the browser as it does in your IDE
-	 * @author	Dave Stewart
-	 * @url		www.davestewart.co.uk
-	 * @date	June 2012
+	 * 
+	 * @param		{Number}		size				The number of spaces the tab should take up. Defaults to 4
+	 * @param		{Boolean}		nonBreaking			An optional Boolean which inserts non-breaking space entities instead of normal spaces. Defaults to false
+	 * @param		{Boolean}		overrideSupport		An optional Boolean which overrides browser support for tabSize, and forces the insertion of spaces. Defaults to false
+	 * @returns		{jQuery}							The current jQuery object
+	 * 
+	 * @author		Dave Stewart
+	 * @url			www.davestewart.co.uk
+	 * @date		June 2012
 	 */
 	$.fn.tabSize = function(size, nonBreaking, overrideSupport)
 	{
