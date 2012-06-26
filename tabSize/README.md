@@ -20,11 +20,12 @@ with 8-space tabs size.
     9               Verve                   Bitter Sweet Symphony   1997
     10              U2                              With Or Without You             1987
     
-After running the plugin, the element's CSS tabSize property is either set to 4, or 
-if unsupported, tabs are correctly converted to spaces, lining up the text columns
-as expected:
+After running the plugin...
 
     jQuery('pre').tabSize(4);
+
+...the element's CSS tabSize property is either set to 4, or if unsupported, tabs 
+are correctly converted to spaces, lining up the text columns as expected:
 
     |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |
     Rank    Artist          Song                    Year
