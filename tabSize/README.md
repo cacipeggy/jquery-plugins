@@ -25,7 +25,7 @@ After running the plugin...
     jQuery('pre').tabSize(4);
 
 
-For browsers that support the tabSize, the style.tabSize of the targetted element is set to to 4.
+For browsers that support tabSize, the style.tabSize of the targetted element is set to to 4.
 For browsers that do not support the property, tabs are correctly converted to spaces, lining up the text in columns as expected:
 
     |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |
@@ -42,7 +42,9 @@ For browsers that do not support the property, tabs are correctly converted to s
     10      U2              With Or Without You     1987
 
 
-Another demo with some actual code this time:
+Another demo with some actual code this time.
+
+Before running the plugin...
 
     |       |       |       |       |       |       |       |       |       |       |       |       |
 	import sounds.*;
@@ -52,6 +54,9 @@ Another demo with some actual code this time:
 	var laserShoot  :Sound  = new Laser();
 	var notify              :Sound  = new Notify();
 	var powerUp             :Sound  = new PowerUp();
+
+
+And the results afterwards:
 
     |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |
 	import sounds.*;
